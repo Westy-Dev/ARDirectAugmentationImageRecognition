@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 848409ee8ba454f42a5ddff137688a27, type: 3}
+  m_Name: ReferenceImageLibrary
+  m_EditorClassIdentifier: 
+  m_GuidLow: 5761228174215731442
+  m_GuidHigh: 866493352833576844
+  m_Images:
+  - m_SerializedGuid:
+      m_GuidLow: 5165810078791188418
+      m_GuidHigh: 15864638415819369862
+    m_SerializedTextureGuid:
+      m_GuidLow: 14673954547306815446
+      m_GuidHigh: 17293588584678462440
+    m_Size: {x: 0.1, y: 0.1}
+    m_SpecifySize: 1
+    m_Name: Radiohead
+    m_Texture: {fileID: 0}
