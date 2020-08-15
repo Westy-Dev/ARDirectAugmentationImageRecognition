@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
@@ -12,6 +13,9 @@ public class UIManager : MonoBehaviour
 
     [SerializeField]
     private GameObject instructionBackground;
+
+    [SerializeField]
+    private Text NumberOfPartsForInstruction;
 
     private bool debug = false;
     private bool showInstructionBackground = false;
@@ -42,5 +46,10 @@ public class UIManager : MonoBehaviour
     public void resetPosition()
     {
         arSessionManager.resetPosition();
+    }
+
+    public void UpdateNumberOfMovingPartsForInstruction(int numberOfParts)
+    {
+        NumberOfPartsForInstruction.text = "Parts in Step: " + numberOfParts;
     }
 }

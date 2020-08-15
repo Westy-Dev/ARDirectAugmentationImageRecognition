@@ -31,7 +31,7 @@ PrefabInstance:
     - target: {fileID: 8595148167206804015, guid: 36c70d936c150714a84b37449e3db101,
         type: 3}
       propertyPath: m_Name
-      value: SportsCar31100_0 Variant
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8936207175660224661, guid: 36c70d936c150714a84b37449e3db101,
         type: 3}
@@ -91,6 +91,9 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 1810750362, guid: 36c70d936c150714a84b37449e3db101, type: 3}
     - {fileID: 411529489, guid: 36c70d936c150714a84b37449e3db101, type: 3}
+    - {fileID: 939395246245976773, guid: 36c70d936c150714a84b37449e3db101, type: 3}
+    - {fileID: 4778648694872077516, guid: 36c70d936c150714a84b37449e3db101, type: 3}
+    - {fileID: 2634164794103525758, guid: 36c70d936c150714a84b37449e3db101, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 36c70d936c150714a84b37449e3db101, type: 3}
 --- !u!1 &1737602014796380333 stripped
 GameObject:

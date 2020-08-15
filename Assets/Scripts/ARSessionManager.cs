@@ -25,9 +25,10 @@ public class ARSessionManager : MonoBehaviour
     private int lastInstructionIndex;
     private GameObject currentModel;
 
+    [SerializeField]
+    private UIManager uiManager;
     private void OnEnable()
     {
-        Debug.Log("Enabled");
         arTrackingImageManager.trackedImagesChanged += TrackedImagesChanged;
     }
 
@@ -96,6 +97,9 @@ public class ARSessionManager : MonoBehaviour
             Debug.Log("Image Tracked");
             currentModel = Instantiate(modelInstructions[currentInstructionIndex], image.transform.position, image.transform.rotation);
             currentModel.transform.SetParent(image.transform);
+
+            int numberOfMovingPartsForInstruction = getNumberOfMovingPartsForInstruction(currentModel);
+            uiManager.UpdateNumberOfMovingPartsForInstruction(numberOfMovingPartsForInstruction);
         }
 
         foreach (ARTrackedImage image in args.removed)
@@ -116,6 +120,28 @@ public class ARSessionManager : MonoBehaviour
             Destroy(currentModel);
             currentModel = Instantiate(modelInstructions[currentInstructionIndex], aRTrackedImage.transform.position, aRTrackedImage.transform.rotation);
             currentModel.transform.SetParent(aRTrackedImage.transform);
+
+            int numberOfMovingPartsForInstruction = getNumberOfMovingPartsForInstruction(currentModel);
+            uiManager.UpdateNumberOfMovingPartsForInstruction(numberOfMovingPartsForInstruction);
         }
+    }
+
+    private int getNumberOfMovingPartsForInstruction(GameObject currentModel)
+    {
+        int numberOfMovingPartsForInstruction = 0;
+        foreach (Transform part in currentModel.transform)
+        {
+            InstructionPieceMovement movementScript = part.GetComponent<InstructionPieceMovement>();
+            if (movementScript != null)
+            {
+                numberOfMovingPartsForInstruction++;
+            }
+
+            if (part.childCount > 0)
+            {
+                numberOfMovingPartsForInstruction += getNumberOfMovingPartsForInstruction(part.gameObject);
+            }
+        }
+        return numberOfMovingPartsForInstruction;
     }
 }
