@@ -182,7 +182,7 @@ PrefabInstance:
     - target: {fileID: 822788188521607641, guid: bac3fa64fbb9ccc44a426a619d91afaf,
         type: 3}
       propertyPath: m_Name
-      value: 44
+      value: 45
       objectReference: {fileID: 0}
     - target: {fileID: 2475841876797424690, guid: bac3fa64fbb9ccc44a426a619d91afaf,
         type: 3}
@@ -194,11 +194,21 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2547286583943277363, guid: bac3fa64fbb9ccc44a426a619d91afaf,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 091955bfbf96a6c4abbf63a5caba86ab, type: 2}
     - target: {fileID: 2662285752016304294, guid: bac3fa64fbb9ccc44a426a619d91afaf,
         type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2662285752016304294, guid: bac3fa64fbb9ccc44a426a619d91afaf,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 091955bfbf96a6c4abbf63a5caba86ab, type: 2}
     - target: {fileID: 4440883633998190287, guid: bac3fa64fbb9ccc44a426a619d91afaf,
         type: 3}
       propertyPath: m_Enabled
@@ -214,11 +224,21 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8557599873565262337, guid: bac3fa64fbb9ccc44a426a619d91afaf,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 091955bfbf96a6c4abbf63a5caba86ab, type: 2}
     - target: {fileID: 8629884114067936040, guid: bac3fa64fbb9ccc44a426a619d91afaf,
         type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8629884114067936040, guid: bac3fa64fbb9ccc44a426a619d91afaf,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 091955bfbf96a6c4abbf63a5caba86ab, type: 2}
     - target: {fileID: 8703871960410811920, guid: bac3fa64fbb9ccc44a426a619d91afaf,
         type: 3}
       propertyPath: m_Enabled

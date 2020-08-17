@@ -76,6 +76,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1646438699888171551, guid: 4c22880f8c644e14ab7862532094cb0b,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 091955bfbf96a6c4abbf63a5caba86ab, type: 2}
     - target: {fileID: 1714725348104846415, guid: 4c22880f8c644e14ab7862532094cb0b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -134,23 +139,38 @@ PrefabInstance:
     - target: {fileID: 2053708718923966197, guid: 4c22880f8c644e14ab7862532094cb0b,
         type: 3}
       propertyPath: m_Name
-      value: 20
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 3789018335956003504, guid: 4c22880f8c644e14ab7862532094cb0b,
         type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3789018335956003504, guid: 4c22880f8c644e14ab7862532094cb0b,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 091955bfbf96a6c4abbf63a5caba86ab, type: 2}
     - target: {fileID: 4770146448690458883, guid: 4c22880f8c644e14ab7862532094cb0b,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4770146448690458883, guid: 4c22880f8c644e14ab7862532094cb0b,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 091955bfbf96a6c4abbf63a5caba86ab, type: 2}
+    - target: {fileID: 5517543050936901325, guid: 4c22880f8c644e14ab7862532094cb0b,
         type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5517543050936901325, guid: 4c22880f8c644e14ab7862532094cb0b,
         type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 091955bfbf96a6c4abbf63a5caba86ab, type: 2}
     m_RemovedComponents:
     - {fileID: 1936244220, guid: 4c22880f8c644e14ab7862532094cb0b, type: 3}
     - {fileID: 1936244221, guid: 4c22880f8c644e14ab7862532094cb0b, type: 3}

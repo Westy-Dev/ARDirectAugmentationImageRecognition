@@ -26,7 +26,7 @@ PrefabInstance:
     - target: {fileID: 2336481971750323485, guid: 69a16b520346e2d45b262d0d4a10d1e5,
         type: 3}
       propertyPath: m_Name
-      value: SportsCar31100_0 Variant
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3109464331704082343, guid: 69a16b520346e2d45b262d0d4a10d1e5,
         type: 3}
@@ -88,6 +88,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3263434446563723368, guid: 69a16b520346e2d45b262d0d4a10d1e5,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 091955bfbf96a6c4abbf63a5caba86ab, type: 2}
     m_RemovedComponents:
     - {fileID: 25431787, guid: 69a16b520346e2d45b262d0d4a10d1e5, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 69a16b520346e2d45b262d0d4a10d1e5, type: 3}

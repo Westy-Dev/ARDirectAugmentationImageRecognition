@@ -44,6 +44,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1816316511005223577, guid: 85a0b21ce1b30614283f2035ed44896c,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 091955bfbf96a6c4abbf63a5caba86ab, type: 2}
     - target: {fileID: 2655133408841610853, guid: 85a0b21ce1b30614283f2035ed44896c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -102,13 +107,18 @@ PrefabInstance:
     - target: {fileID: 3428151258445704415, guid: 85a0b21ce1b30614283f2035ed44896c,
         type: 3}
       propertyPath: m_Name
-      value: SportsCar31100_0 Variant
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5225455612284144107, guid: 85a0b21ce1b30614283f2035ed44896c,
         type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5225455612284144107, guid: 85a0b21ce1b30614283f2035ed44896c,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 091955bfbf96a6c4abbf63a5caba86ab, type: 2}
     - target: {fileID: 5959105634685567480, guid: 85a0b21ce1b30614283f2035ed44896c,
         type: 3}
       propertyPath: m_Enabled

@@ -44,10 +44,15 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1065129202327055342, guid: 9f6f26d847348b64093a998868399d79,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 091955bfbf96a6c4abbf63a5caba86ab, type: 2}
     - target: {fileID: 4701425014203063050, guid: 9f6f26d847348b64093a998868399d79,
         type: 3}
       propertyPath: m_Name
-      value: 35
+      value: 36
       objectReference: {fileID: 0}
     - target: {fileID: 5365196217913819568, guid: 9f6f26d847348b64093a998868399d79,
         type: 3}
@@ -109,6 +114,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5563777041395710140, guid: 9f6f26d847348b64093a998868399d79,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 091955bfbf96a6c4abbf63a5caba86ab, type: 2}
     m_RemovedComponents:
     - {fileID: 844080839, guid: 9f6f26d847348b64093a998868399d79, type: 3}
     - {fileID: 844080840, guid: 9f6f26d847348b64093a998868399d79, type: 3}

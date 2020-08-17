@@ -44,15 +44,25 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5243069663416520081, guid: 3f7c3c3714c57434e94965ddabb67e86,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c92dbc14af2e2f3478ba7b989d0f7cd6, type: 2}
     - target: {fileID: 7229285185585595372, guid: 3f7c3c3714c57434e94965ddabb67e86,
         type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7229285185585595372, guid: 3f7c3c3714c57434e94965ddabb67e86,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c92dbc14af2e2f3478ba7b989d0f7cd6, type: 2}
     - target: {fileID: 8567451916647621068, guid: 3f7c3c3714c57434e94965ddabb67e86,
         type: 3}
       propertyPath: m_Name
-      value: SportsCar31100_0 Variant
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9056286455843076982, guid: 3f7c3c3714c57434e94965ddabb67e86,
         type: 3}

@@ -81,13 +81,18 @@ PrefabInstance:
     - target: {fileID: 1874599205367751288, guid: 1415dad29659082489e9fe96cd86edc4,
         type: 3}
       propertyPath: m_Name
-      value: 43
+      value: 44
       objectReference: {fileID: 0}
     - target: {fileID: 6174517575124825209, guid: 1415dad29659082489e9fe96cd86edc4,
         type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6174517575124825209, guid: 1415dad29659082489e9fe96cd86edc4,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f932e92d7f08fe14b8a0949d7d4b128d, type: 2}
     m_RemovedComponents:
     - {fileID: 103705724, guid: 1415dad29659082489e9fe96cd86edc4, type: 3}
     - {fileID: 103705728, guid: 1415dad29659082489e9fe96cd86edc4, type: 3}
