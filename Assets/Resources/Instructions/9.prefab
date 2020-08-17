@@ -60,10 +60,15 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 110717238741568286, guid: e9307899ed375b347a37681199642451,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0dedf08ad195ff543bd2459df4ee8c2b, type: 2}
     - target: {fileID: 1320663159237529185, guid: e9307899ed375b347a37681199642451,
         type: 3}
       propertyPath: m_Name
-      value: SportsCar31100_0 Variant
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 1808231027214914779, guid: e9307899ed375b347a37681199642451,
         type: 3}

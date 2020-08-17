@@ -97,18 +97,28 @@ PrefabInstance:
     - target: {fileID: 4562983327818037754, guid: 7bfbe8a03231d7f4cb50f4e9b5a7b291,
         type: 3}
       propertyPath: m_Name
-      value: 26
+      value: 27
       objectReference: {fileID: 0}
     - target: {fileID: 6761467215155947711, guid: 7bfbe8a03231d7f4cb50f4e9b5a7b291,
         type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6761467215155947711, guid: 7bfbe8a03231d7f4cb50f4e9b5a7b291,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0dedf08ad195ff543bd2459df4ee8c2b, type: 2}
     - target: {fileID: 7630022014003011606, guid: 7bfbe8a03231d7f4cb50f4e9b5a7b291,
         type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7630022014003011606, guid: 7bfbe8a03231d7f4cb50f4e9b5a7b291,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0dedf08ad195ff543bd2459df4ee8c2b, type: 2}
     m_RemovedComponents:
     - {fileID: 1659704194, guid: 7bfbe8a03231d7f4cb50f4e9b5a7b291, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7bfbe8a03231d7f4cb50f4e9b5a7b291, type: 3}
