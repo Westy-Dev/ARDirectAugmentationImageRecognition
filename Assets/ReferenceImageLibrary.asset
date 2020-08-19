@@ -19,9 +19,9 @@ MonoBehaviour:
       m_GuidLow: 5165810078791188418
       m_GuidHigh: 15864638415819369862
     m_SerializedTextureGuid:
-      m_GuidLow: 14673954547306815446
-      m_GuidHigh: 17293588584678462440
-    m_Size: {x: 0.1, y: 0.1}
+      m_GuidLow: 9485765454791149121
+      m_GuidHigh: 6056697791178836459
+    m_Size: {x: 0.26, y: 0.20226157}
     m_SpecifySize: 1
-    m_Name: Radiohead
+    m_Name: TrackingMat
     m_Texture: {fileID: 0}
