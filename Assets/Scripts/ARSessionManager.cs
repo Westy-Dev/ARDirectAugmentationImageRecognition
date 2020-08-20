@@ -11,7 +11,6 @@ public class ARSessionManager : MonoBehaviour
     public string InstructionFolderName;
     private GameObject[] modelInstructions;
     //The position to instantiate the models in the world
-    public Vector3 AssemblyPosition;
     private Vector3 assemblyInitialScale;
     private Quaternion assemblyInitialRotation;
 
@@ -42,6 +41,7 @@ public class ARSessionManager : MonoBehaviour
 
         currentInstructionIndex = 0;
 
+        uiManager.prevButton.SetActive(false);
         // Instantiates a Prefab located in any Resources
         // folder in your project's Assets folder with the name provided in the inspector
         modelInstructions = Resources.LoadAll<GameObject>(InstructionFolderName);
@@ -52,11 +52,6 @@ public class ARSessionManager : MonoBehaviour
         {
             lastInstructionIndex = modelInstructions.Length - 1;
 
-           // arTrackingImageManager.trackedImagePrefab = modelInstructions[currentInstructionIndex];
-            //-0.048f, -0.038f, 0.287f
-            //currentModel.transform.position = AssemblyPosition;
-            //assemblyInitialScale = currentModel.transform.localScale;
-            //assemblyInitialRotation = currentModel.transform.rotation;
         } else
         {
             Debug.LogError("Cannot Load Instructions - Instructions Not Found in Folder: " + InstructionFolderName,gameObject);
@@ -71,6 +66,8 @@ public class ARSessionManager : MonoBehaviour
             currentInstructionIndex++;
             loadNewModel(currentInstructionIndex);
         }
+
+        updateUIButtons();
     }
 
     public void loadPreviousInstruction()
@@ -80,11 +77,41 @@ public class ARSessionManager : MonoBehaviour
             currentInstructionIndex--;
             loadNewModel(currentInstructionIndex);
         }
+
+        updateUIButtons();
     }
 
+    private void updateUIButtons()
+    {
+
+        if (currentInstructionIndex == 0)
+        {
+            uiManager.prevButton.SetActive(false);
+        }
+        else if (!uiManager.prevButton.activeSelf)
+        {
+            uiManager.prevButton.SetActive(true);
+        }
+
+        if (currentInstructionIndex == lastInstructionIndex)
+        {
+            uiManager.nextButton.SetActive(false);
+        }
+        else if (!uiManager.nextButton.activeSelf)
+        {
+            uiManager.nextButton.SetActive(true);
+        }
+
+    }
+    private void updateUIText()
+    {
+        int numberOfMovingPartsForInstruction = getNumberOfMovingPartsForInstruction(currentModel);
+        uiManager.UpdateNumberOfMovingPartsForInstruction(numberOfMovingPartsForInstruction);
+        uiManager.UpdateStepNumber(currentInstructionIndex + 1);
+    }
     public void resetPosition()
     {
-        currentModel.transform.localPosition = AssemblyPosition;
+        //currentModel.transform.localPosition = AssemblyPosition;
         currentModel.transform.localScale = assemblyInitialScale;
         currentModel.transform.rotation = assemblyInitialRotation;
     }
@@ -98,8 +125,7 @@ public class ARSessionManager : MonoBehaviour
             currentModel = Instantiate(modelInstructions[currentInstructionIndex], image.transform.position, image.transform.rotation);
             currentModel.transform.SetParent(image.transform);
 
-            int numberOfMovingPartsForInstruction = getNumberOfMovingPartsForInstruction(currentModel);
-            uiManager.UpdateNumberOfMovingPartsForInstruction(numberOfMovingPartsForInstruction);
+            updateUIText();
         }
 
         foreach (ARTrackedImage image in args.removed)
@@ -121,8 +147,7 @@ public class ARSessionManager : MonoBehaviour
             currentModel = Instantiate(modelInstructions[currentInstructionIndex], aRTrackedImage.transform.position, aRTrackedImage.transform.rotation);
             currentModel.transform.SetParent(aRTrackedImage.transform);
 
-            int numberOfMovingPartsForInstruction = getNumberOfMovingPartsForInstruction(currentModel);
-            uiManager.UpdateNumberOfMovingPartsForInstruction(numberOfMovingPartsForInstruction);
+            updateUIText();
         }
     }
 
