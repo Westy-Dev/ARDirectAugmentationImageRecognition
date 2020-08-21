@@ -109,11 +109,9 @@ public class ARSessionManager : MonoBehaviour
         uiManager.UpdateNumberOfMovingPartsForInstruction(numberOfMovingPartsForInstruction);
         uiManager.UpdateStepNumber(currentInstructionIndex + 1);
     }
-    public void resetPosition()
+    public void resetTracking()
     {
-        //currentModel.transform.localPosition = AssemblyPosition;
-        currentModel.transform.localScale = assemblyInitialScale;
-        currentModel.transform.rotation = assemblyInitialRotation;
+        arSession.Reset();
     }
 
     void TrackedImagesChanged(ARTrackedImagesChangedEventArgs args)

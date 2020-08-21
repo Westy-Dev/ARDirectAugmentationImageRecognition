@@ -53,9 +53,9 @@ public class UIManager : MonoBehaviour
         }
     }
 
-    public void resetPosition()
+    public void resetTracking()
     {
-        arSessionManager.resetPosition();
+        arSessionManager.resetTracking();
     }
 
     public void UpdateNumberOfMovingPartsForInstruction(int numberOfParts)
