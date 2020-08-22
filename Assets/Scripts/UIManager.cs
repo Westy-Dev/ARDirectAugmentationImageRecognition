@@ -19,11 +19,15 @@ public class UIManager : MonoBehaviour
     [SerializeField]
     private Button debugButton;
 
+    [SerializeField]
+    private Button guidelinesButton;
+
     public GameObject prevButton;
 
     public GameObject nextButton;
 
     private bool debug = false;
+    private bool guidelines = false;
     private Color32 toggleColor = new Color32(159, 159, 159, 255);
     private Color defaultColor = Color.white;
 
@@ -66,5 +70,22 @@ public class UIManager : MonoBehaviour
     public void UpdateStepNumber(int stepNumber)
     {
         StepNumber.text = "Step Number: " + stepNumber;
+    }
+
+    public void toggleGuidelines()
+    {
+        guidelines = !guidelines;
+
+        arSessionManager.toggleGuidelines();
+
+        if (guidelines)
+        {
+            guidelinesButton.image.color = toggleColor;
+        }
+        else
+        {
+            guidelinesButton.image.color = defaultColor;
+        }
+       
     }
 }

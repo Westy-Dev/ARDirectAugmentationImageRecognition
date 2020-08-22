@@ -20,6 +20,9 @@ public class ARSessionManager : MonoBehaviour
     [SerializeField]
     private ARSession arSession;
 
+    [SerializeField]
+    private bool guidelines;
+
     private int currentInstructionIndex;
     private int lastInstructionIndex;
     private GameObject currentModel;
@@ -123,6 +126,11 @@ public class ARSessionManager : MonoBehaviour
             currentModel = Instantiate(modelInstructions[currentInstructionIndex], image.transform.position, image.transform.rotation);
             currentModel.transform.SetParent(image.transform);
 
+            if (guidelines)
+            {
+                toggleGuidelines(currentModel);
+            }
+
             updateUIText();
         }
 
@@ -145,6 +153,10 @@ public class ARSessionManager : MonoBehaviour
             currentModel = Instantiate(modelInstructions[currentInstructionIndex], aRTrackedImage.transform.position, aRTrackedImage.transform.rotation);
             currentModel.transform.SetParent(aRTrackedImage.transform);
 
+            if (guidelines)
+            {
+                toggleGuidelines(currentModel);
+            }
             updateUIText();
         }
     }
@@ -166,5 +178,30 @@ public class ARSessionManager : MonoBehaviour
             }
         }
         return numberOfMovingPartsForInstruction;
+    }
+
+    public void toggleGuidelines()
+    {
+        toggleGuidelines(currentModel);
+        guidelines = !guidelines;
+    }
+
+    public void toggleGuidelines(GameObject currentModel)
+    {
+        foreach (Transform part in currentModel.transform)
+        {
+            Guidelines materialChangerScript = part.GetComponent<Guidelines>();
+            InstructionPieceMovement movementScript = part.GetComponent<InstructionPieceMovement>();
+
+            if (materialChangerScript != null && movementScript == null)
+            {
+                materialChangerScript.toggleGuidelines();
+            }
+
+            if(part.childCount > 0)
+            {
+                toggleGuidelines(part.gameObject);
+            }
+        }
     }
 }
