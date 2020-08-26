@@ -12,7 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4dba243afc9adaa4aa770ad32de5b08a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  guidelineMaterial: {fileID: 2100000, guid: efecadb5b18c6b741a7cb2fd40f449e7, type: 2}
 --- !u!114 &3948811421967545090
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25,7 +24,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4dba243afc9adaa4aa770ad32de5b08a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  guidelineMaterial: {fileID: 2100000, guid: efecadb5b18c6b741a7cb2fd40f449e7, type: 2}
 --- !u!114 &360756760
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -111,6 +109,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 6ea4495841d8e534f996d67e8300d764, type: 2}
+    - target: {fileID: 5480882796984669755, guid: 3f7c3c3714c57434e94965ddabb67e86,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7229285185585595372, guid: 3f7c3c3714c57434e94965ddabb67e86,
         type: 3}
       propertyPath: m_Enabled

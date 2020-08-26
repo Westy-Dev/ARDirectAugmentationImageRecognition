@@ -484,6 +484,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8560449222960891911, guid: 377c67b53541432438564032164224ff,
+        type: 3}
+      propertyPath: m_settings.gesture
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8560449222970917457, guid: 377c67b53541432438564032164224ff,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -686,6 +691,7 @@ MonoBehaviour:
   InstructionFolderName: Instructions
   arTrackingImageManager: {fileID: 243946337}
   arSession: {fileID: 530577715}
+  guidelines: 0
   uiManager: {fileID: 339768261}
 --- !u!1 &1100049532
 GameObject:
@@ -1182,6 +1188,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: DebugButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 3824151571954451830, guid: a855369da3294c94e8f77024f0df3975,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5406389491352747063, guid: a855369da3294c94e8f77024f0df3975,
         type: 3}
