@@ -1,7 +1,7 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
+﻿using UnityEngine;
+/// <summary>
+/// Script that controls the guidelines option
+/// </summary>
 public class Guidelines : MonoBehaviour
 {
     private Material defaultMaterial;
@@ -9,18 +9,19 @@ public class Guidelines : MonoBehaviour
 
     public void toggleGuidelines()
     {
+        //Load the materials for default and guidelines
         defaultMaterial = Resources.Load("Materials/Invisible", typeof(Material)) as Material;
         guidelineMaterial = Resources.Load("Materials/AlphaOutline", typeof(Material)) as Material;
 
-        Debug.Log("Default Material = " + defaultMaterial);
+        //If the material on the object is default
         if (GetComponent<Renderer>().material.name.Contains(defaultMaterial.name))
         {
-            Debug.Log("Applying guidelines");
+            //then change it to the guideline material
             GetComponent<Renderer>().material = guidelineMaterial;
         }
         else
         {
-            Debug.Log("Applying default material");
+            //otherwise change it to the default material
             GetComponent<Renderer>().material = defaultMaterial;
         }
     }

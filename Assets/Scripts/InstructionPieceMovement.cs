@@ -1,34 +1,47 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Script that moves a game object to display an animated instruction
+/// </summary>
 public class InstructionPieceMovement: MonoBehaviour
 {
     private Vector3 startPosition;
     private Vector3 endPosition;
-    public float speed;
-    public float distance;
-    public bool highlight = true;
+
+    [Tooltip("The speed of the instruction piece")]
+    [SerializeField]
+    private float speed;
+
+    [Tooltip("The distance of the instruction piece away from its initial starting position")]
+    [SerializeField]
+    private float distance;
+
     public enum Direction { X, Y, Z}
-    public Direction direction;
+
+    [Tooltip("The direction that the instruction piece will move")]
+    [SerializeField]
+    private Direction direction;
 
     private float percentageOfMovementElapsed = 0;
     private bool resetting;
+
     // Start is called before the first frame update
     void Start()
     {
         SetMovementPositions(direction);
-        if (false)
-        {
-            SetHighlight();
-        }
-
     }
 
+    /// <summary>
+    /// Sets the start and end positions of the instruction piece given the direction of travel
+    /// </summary>
+    /// <param name="direction">The direction of travel</param>
     void SetMovementPositions(Direction direction)
     {
+        //End position is where the piece initially starts on the model
         endPosition = new Vector3(transform.localPosition.x, transform.localPosition.y, transform.localPosition.z);
-        
+
+        //Start position set by adding the distance to move to the end position in the corresponding direction
         switch (direction)
         {
             case Direction.X:
@@ -44,17 +57,8 @@ public class InstructionPieceMovement: MonoBehaviour
                 break;
         }
 
+        //Set the start position to the instruction piece
         transform.localPosition = startPosition;
-    }
-
-    void SetHighlight()
-    {
-        GameObject highlight = Instantiate(Resources.Load("Highlight")) as GameObject;
-        // Make it a child of the parent's parent object (the AR object)
-        highlight.transform.SetParent(transform.parent.transform);
-
-        // Set the local position to the local end position of the moving lego piece
-        highlight.transform.localPosition = endPosition;
     }
 
     // Update is called once per frame
@@ -63,9 +67,14 @@ public class InstructionPieceMovement: MonoBehaviour
         if (transform.localPosition != endPosition)
         {
             percentageOfMovementElapsed += Time.deltaTime;
+
+            //If we are not at the end position then gradually move to the end position
+            //from the start position with the given speed
             transform.localPosition = Vector3.Lerp(startPosition, endPosition, percentageOfMovementElapsed * speed);
         } else
         {
+            //If we have reached the end position and we are not already resetting the
+            //position of the instruction piece then reset it
             if (!resetting)
             {
                 StartCoroutine(ResetPosition());
@@ -73,6 +82,10 @@ public class InstructionPieceMovement: MonoBehaviour
         }   
     }
 
+    /// <summary>
+    /// Resets the position of the instruction piece to the start position
+    /// </summary>
+    /// <returns></returns>
     IEnumerator ResetPosition()
     {
         resetting = true;

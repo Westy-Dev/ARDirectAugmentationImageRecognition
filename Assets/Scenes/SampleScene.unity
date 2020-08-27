@@ -266,10 +266,10 @@ RectTransform:
   m_Father: {fileID: 1689182660}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 64.302, y: -405.4}
-  m_SizeDelta: {x: 115.0246, y: 36.52504}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 64.302, y: 36.600006}
+  m_SizeDelta: {x: 115.0246, y: 36.525024}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &453234485
 MonoBehaviour:
@@ -584,9 +584,9 @@ RectTransform:
   m_Father: {fileID: 1689182660}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 64.29999, y: -344.2}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 64.29999, y: -123.20001}
   m_SizeDelta: {x: 115.0289, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1017097118
@@ -691,7 +691,6 @@ MonoBehaviour:
   InstructionFolderName: Instructions
   arTrackingImageManager: {fileID: 243946337}
   arSession: {fileID: 530577715}
-  guidelines: 0
   uiManager: {fileID: 339768261}
 --- !u!1 &1100049532
 GameObject:
@@ -795,7 +794,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -78.7, y: -26.459991}
+  m_AnchoredPosition: {x: -78.69995, y: -26.45996}
   m_SizeDelta: {x: 110.463394, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1134265560
