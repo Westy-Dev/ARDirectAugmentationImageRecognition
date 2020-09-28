@@ -470,7 +470,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 1.2
   distance: 0.5
-  highlight: 1
   direction: 2
 --- !u!114 &2571148147369014657
 MonoBehaviour:
@@ -499,7 +498,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 1.2
   distance: 0.5
-  highlight: 1
   direction: 2
 --- !u!114 &6641470620529972080
 MonoBehaviour:
@@ -528,7 +526,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 1.2
   distance: 0.5
-  highlight: 1
   direction: 2
 --- !u!114 &3887838820673155725
 MonoBehaviour:
@@ -557,7 +554,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 1.2
   distance: 0.5
-  highlight: 1
   direction: 2
 --- !u!114 &1111874652004160724
 MonoBehaviour:
@@ -851,6 +847,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 6ea4495841d8e534f996d67e8300d764, type: 2}
+    - target: {fileID: 7178162002447936855, guid: 54f5651a5657be14b986652a3f69b36b,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7493619377196971560, guid: 54f5651a5657be14b986652a3f69b36b,
         type: 3}
       propertyPath: m_Materials.Array.data[0]

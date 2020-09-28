@@ -154,12 +154,14 @@ public class ARSessionManager : MonoBehaviour
     /// <param name="args"></param>
     void TrackedImagesChanged(ARTrackedImagesChangedEventArgs args)
     {
-        //If an image is added, spawn the current model instructions to show given by the currentInstructionIndex
-        //at the tracked images position and rotation
+        //If an image is added, spawn the current model instructions to show
+        //given by the currentInstructionIndex at the tracked images position and rotation
         foreach (ARTrackedImage image in args.added)
         {
             Debug.Log("Image Tracked");
-            currentModel = Instantiate(modelInstructions[currentInstructionIndex], image.transform.position, image.transform.rotation);
+            currentModel = Instantiate(modelInstructions[currentInstructionIndex],
+                            image.transform.position, image.transform.rotation);
+
             currentModel.transform.SetParent(image.transform);
 
             if (guidelines)
@@ -197,7 +199,8 @@ public class ARSessionManager : MonoBehaviour
             Destroy(currentModel);
             
             //Loads the next model at the tracked images position and rotation
-            currentModel = Instantiate(modelInstructions[currentInstructionIndex], aRTrackedImage.transform.position, aRTrackedImage.transform.rotation);
+            currentModel = Instantiate(modelInstructions[currentInstructionIndex],
+                            aRTrackedImage.transform.position, aRTrackedImage.transform.rotation);
             
             //Set the model's parent to be the tracked image so that when the image moves, the model will too
             currentModel.transform.SetParent(aRTrackedImage.transform);

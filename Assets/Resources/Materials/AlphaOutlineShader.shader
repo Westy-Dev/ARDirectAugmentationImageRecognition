@@ -1,3 +1,5 @@
+// Created By Ngo Duc Hiep (hiepnd)
+// Can Be Found At https://gist.github.com/hiepnd
 // Upgrade NOTE: replaced '_World2Object' with 'unity_WorldToObject'
 // Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
 
