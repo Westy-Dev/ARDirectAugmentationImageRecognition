@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿//Created By Ben Westcott, 2020
+using System.Collections;
 using UnityEngine;
 
 /// <summary>

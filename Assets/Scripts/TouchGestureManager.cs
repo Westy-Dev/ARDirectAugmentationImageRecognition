@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿//Created By Ben Westcott, 2020
+using UnityEngine;
 
 /// <summary>
 /// Manages the touch-based interactions with the AR model instructions

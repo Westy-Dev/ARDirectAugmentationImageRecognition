@@ -1,4 +1,5 @@
-﻿using System;
+﻿//Created By Ben Westcott, 2020
+using System;
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
 

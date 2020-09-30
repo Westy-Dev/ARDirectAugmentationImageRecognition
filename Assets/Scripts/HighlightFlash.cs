@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿//Created By Ben Westcott, 2020
+using UnityEngine;
 /// <summary>
 /// Script that controls highlight flashing on the game object it is attached to
 /// </summary>

@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿//Created By Ben Westcott, 2020
+using UnityEngine;
 using UnityEngine.UI;
 /// <summary>
 /// Manages the UI interaction elements. Used for button events.

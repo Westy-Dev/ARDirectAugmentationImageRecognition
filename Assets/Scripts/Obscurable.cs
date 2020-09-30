@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿//Created By Ben Westcott, 2020
+using UnityEngine;
 /// <summary>
 /// Script which manipulates the render queue of the game object it is attached to.
 /// Used for occlusion of the AR moving instructions against the real object.
